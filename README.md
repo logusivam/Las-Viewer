@@ -51,7 +51,7 @@ npm install
 
 1. **Create a MongoDB Atlas Account:**
 
-    - Sign up at [MongoDB Atlas](https://www.mongodb.com/products/platform/atlas-database).
+        - Sign up at [MongoDB Atlas](https://www.mongodb.com/products/platform/atlas-database).
     - Create a new cluster.
 
 2. **Set Up Your Database:**
