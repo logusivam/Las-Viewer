@@ -84,7 +84,7 @@ MONGO_URI=your-mongodb-connection-string-here
 ```bash
 npm start
 ```
-   - The backend server will run on `http://localhost:5000`.
+    - The backend server will run on `http://localhost:5000`.
 
 2. **Start the Frontend Server**:
 
@@ -92,8 +92,9 @@ npm start
 ```bash
 cd client
 ```
+
     - Run the following command:
-    
+
 ```bash
 npm run dev
 ```
