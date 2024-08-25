@@ -47,11 +47,11 @@ npm install
     - This folder will be used to store the LAS files uploaded through the application.
 </details> 
 
-<details> <summary><strong>Setup MongoDB Atlas</strong></summary>
+<summary><strong>Setup MongoDB Atlas</strong></summary>
 
 1. **Create a MongoDB Atlas Account:**
 
-        - Sign up at [MongoDB Atlas](https://www.mongodb.com/products/platform/atlas-database).
+    - Sign up at [MongoDB Atlas](https://www.mongodb.com/products/platform/atlas-database).
     - Create a new cluster.
 
 2. **Set Up Your Database:**
@@ -75,7 +75,8 @@ MONGO_URI=your-mongodb-connection-string-here
 ```
 **Note**: The `.env` file is included in `.gitignore` to ensure sensitive information is not exposed in the repository.
 
-</details> <details> <summary><strong>Running the Project</strong></summary>
+
+<details> <summary><strong>Running the Project</strong></summary>
 
 1. **Start the Backend Server**:
 
