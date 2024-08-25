@@ -61,14 +61,14 @@ npm install
 
 3. **Get Your MongoDB Connection String:**
 
-  - Navigate to your cluster in MongoDB Atlas.
-  - Click on "Connect" and choose "Connect your application".
-  - Copy the connection string provided.
+    - Navigate to your cluster in MongoDB Atlas.
+    - Click on "Connect" and choose "Connect your application".
+    - Copy the connection string provided.
 
 4. **Configure Environment Variables:**
 
-  - In the root directory of your project, you’ll find a file named `.env.example.`
-  - Rename this file to `.env` and replace `your-mongodb-connection-string-here` with your actual MongoDB connection string:
+    - In the root directory of your project, you’ll find a file named `.env.example.`
+    - Rename this file to `.env` and replace `your-mongodb-connection-string-here` with your actual MongoDB connection string:
 
 ```plaintext
 MONGO_URI=your-mongodb-connection-string-here
