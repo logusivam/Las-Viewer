@@ -35,7 +35,7 @@ Navigate to the root directory and install backend dependencies:
 ```bash
 npm install
 ```
-Navigate to the /client directory and install frontend dependencies:
+Navigate to the `/client` directory and install frontend dependencies:
 
 ```bash
 cd client
