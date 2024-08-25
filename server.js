@@ -37,20 +37,20 @@ const storage = multer.diskStorage({
         cb(null, 'uploads/');
     },
     filename: function (req, file, cb) {
-        cb(null, file.originalname);
+        cb(null, Date.now() + path.extname(file.originalname));
     },
 });
 
 const upload = multer({ storage: storage });
 
 // Upload route
-app.post('/upload', upload.single('lasFile'), async (req, res) => {
-    const newFile = new File({
-        filename: req.file.originalname,
-        filepath: req.file.path,
-    });
-    await newFile.save();
-    res.json({ message: 'File uploaded successfully' });
+app.post('/upload', upload.array('lasFiles', 10), async (req, res) => {
+    const files = req.files.map(file => ({
+        filename: file.originalname,
+        filepath: file.path,
+    }));
+    await File.insertMany(files);
+    res.json({ message: 'Files uploaded successfully' });
 });
 
 // Get files route

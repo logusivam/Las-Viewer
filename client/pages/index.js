@@ -15,7 +15,9 @@ export default function Home() {
 
     const handleFileUpload = async (event) => {
         const formData = new FormData();
-        formData.append('lasFile', event.target.files[0]);
+        for (const file of event.target.files) {
+            formData.append('lasFiles', file);
+        }
 
         await axios.post('http://localhost:5000/upload', formData, {
             headers: {
@@ -31,7 +33,7 @@ export default function Home() {
     return (
         <div>
             <h1>LAS File Viewer</h1>
-            <input type="file" onChange={handleFileUpload} />
+            <input type="file" multiple onChange={handleFileUpload} />
             <ul>
                 {files.map((file) => (
                     <li key={file._id} onClick={() => setSelectedFile(file)}>
