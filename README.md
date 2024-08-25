@@ -2,6 +2,15 @@
 
 This project is a web-based LAS file viewer that allows users to upload and view LAS files directly in the browser. The application is built using React.js, Next.js, MongoDB, Node.js, and Express.
 
+## Demo
+<strong>Before Upload File</strong>
+
+![image](https://github.com/user-attachments/assets/fde2aac8-ee6d-48ca-a06a-4bf679cf1045)
+
+<strong>After Upload File</strong>
+
+
+
 <details> <summary><strong>Project Structure</strong></summary>
 
 ```bash
