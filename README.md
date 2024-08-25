@@ -46,25 +46,29 @@ This folder will be used to store the LAS files uploaded through the application
 
 Create a MongoDB Atlas Account:
 
-Sign up at MongoDB Atlas.
+Sign up at [MongoDB Atlas](https://www.mongodb.com/products/platform/atlas-database).
 Create a new cluster.
-Set Up Your Database:
 
-Create a new database in your cluster.
-Create a new collection named lasfiles to store the uploaded LAS files.
-Get Your MongoDB Connection String:
+2. **Set Up Your Database:**
 
-Navigate to your cluster in MongoDB Atlas.
-Click on "Connect" and choose "Connect your application".
-Copy the connection string provided.
-Configure Environment Variables:
+  - Create a new database in your cluster.
+  - Create a new collection named `lasfiles` to store the uploaded LAS files.
 
-In the root directory of your project, you’ll find a file named .env.example.
-Rename this file to .env and replace your-mongodb-connection-string-here with your actual MongoDB connection string:
+3. **Get Your MongoDB Connection String:**
+
+  - Navigate to your cluster in MongoDB Atlas.
+  - Click on "Connect" and choose "Connect your application".
+  - Copy the connection string provided.
+
+4. **Configure Environment Variables:**
+
+  - In the root directory of your project, you’ll find a file named `.env.example.`
+  - Rename this file to `.env` and replace `your-mongodb-connection-string-here` with your actual MongoDB connection string:
+
 ```plaintext
 MONGO_URI=your-mongodb-connection-string-here
 ```
-**Note**: The .env file is included in .gitignore to ensure sensitive information is not exposed in the repository.
+**Note**: The `.env` file is included in `.gitignore` to ensure sensitive information is not exposed in the repository.
 
 </details> <details> <summary><strong>Running the Project</strong></summary>
 
