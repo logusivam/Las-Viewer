@@ -88,7 +88,10 @@ Access the Application:
 
 Open your web browser and go to http://localhost:3000.
 You can now upload LAS files and view them in the browser.
-</details> <details> <summary><strong>Usage</strong></summary>
+</details> 
+
+<details> <summary><strong>Usage</strong></summary>
+
 Uploading LAS Files:
 
 Click on the "Upload File" button.
@@ -103,6 +106,7 @@ You can customize the background color, viewer styles, button colors, and other 
 </details> 
 
  <summary><strong>Additional Information</strong></summary>
- -Environment Variables: The .env file is excluded from the repository using .gitignore for security reasons. Ensure that you create and configure this file locally using the provided .env.example file.
-- File Uploads: Uploaded LAS files are stored in the /uploads directory on the server.
-Development Mode: For development, you can use VS Code with MongoDB for VS Code extension to manage database connections and interact with your MongoDB Atlas instance.
+
+ - **Environment Variables**: The `.env` file is excluded from the repository using `.gitignore` for security reasons. Ensure that you create and configure this file locally using the provided `.env.example file`.
+- **File Uploads**: Uploaded LAS files are stored in the `/uploads` directory on the server.
+- **Development Mode**: For development, you can use VS Code with MongoDB for VS Code extension to manage database connections and interact with your MongoDB Atlas instance.
