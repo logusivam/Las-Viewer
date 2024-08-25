@@ -73,19 +73,19 @@ In the root directory, run the following command:
 bash
 Copy code
 npm start
-The backend server will run on http://localhost:5000.
+- The backend server will run on http://localhost:5000.
 
 2. **Start the Frontend Server**:
 
-Navigate to the /client directory:
+- Navigate to the /client directory:
 bash
 Copy code
 cd client
-Run the following command:
-bash
-Copy code
+- Run the following command:
+```bash
 npm run dev
-The frontend will run on http://localhost:3000.
+```
+- The frontend will run on http://localhost:3000.
 
 3. **Access the Application**:
 
