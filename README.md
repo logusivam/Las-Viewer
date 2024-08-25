@@ -100,8 +100,9 @@ The selected LAS file will be displayed in the browser with the content formatte
 Customization:
 
 You can customize the background color, viewer styles, button colors, and other UI elements by modifying the globals.css file in the /client/styles/ directory.
-</details> <details> <summary><strong>Additional Information</strong></summary>
-- **Environment Variables**: The .env file is excluded from the repository using .gitignore for security reasons. Ensure that you create and configure this file locally using the provided .env.example file.
+</details> 
+
+ <summary><strong>Additional Information</strong></summary>
+ -Environment Variables: The .env file is excluded from the repository using .gitignore for security reasons. Ensure that you create and configure this file locally using the provided .env.example file.
 - File Uploads: Uploaded LAS files are stored in the /uploads directory on the server.
 Development Mode: For development, you can use VS Code with MongoDB for VS Code extension to manage database connections and interact with your MongoDB Atlas instance.
-</details>
