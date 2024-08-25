@@ -13,10 +13,7 @@ This project is a web-based LAS file viewer that allows users to upload and view
 
 <strong>Video Demo</strong>
 
-
-https://github.com/user-attachments/assets/5b44b1ed-d170-4dfd-ad42-f14ce810c3af
-
-
+![video](https://github.com/user-attachments/assets/dfbab92d-da73-4e8c-8dc6-f58696633e3e)
 
 <details> <summary><strong>Project Structure</strong></summary>
 
