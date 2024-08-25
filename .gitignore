@@ -12,6 +12,9 @@ pids/
 *.seed
 *.pid.lock
 
+#directories for testing
+/sample-test/
+
 # Directory for uploaded files
 /uploads/
 
