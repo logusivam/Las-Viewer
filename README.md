@@ -66,6 +66,7 @@ MONGO_URI=your-mongodb-connection-string-here
 Note: The .env file is included in .gitignore to ensure sensitive information is not exposed in the repository.
 
 </details> <details> <summary><strong>Running the Project</strong></summary>
+
 Start the Backend Server:
 
 In the root directory, run the following command:
@@ -73,6 +74,7 @@ bash
 Copy code
 npm start
 The backend server will run on http://localhost:5000.
+
 Start the Frontend Server:
 
 Navigate to the /client directory:
@@ -84,6 +86,7 @@ bash
 Copy code
 npm run dev
 The frontend will run on http://localhost:3000.
+
 Access the Application:
 
 Open your web browser and go to http://localhost:3000.
@@ -92,17 +95,19 @@ You can now upload LAS files and view them in the browser.
 
 <details> <summary><strong>Usage</strong></summary>
 
-Uploading LAS Files:
+1. **Uploading LAS Files:**
 
-Click on the "Upload File" button.
-Select one or more LAS files from your computer.
-The uploaded files will be listed, and you can click on a file name to view its contents.
-Viewing LAS Files:
+- Click on the "Upload File" button.
+- Select one or more LAS files from your computer.
+- The uploaded files will be listed, and you can click on a file name to view its contents.
 
-The selected LAS file will be displayed in the browser with the content formatted for easy viewing.
-Customization:
+2. **Viewing LAS Files:**
 
-You can customize the background color, viewer styles, button colors, and other UI elements by modifying the globals.css file in the /client/styles/ directory.
+- The selected LAS file will be displayed in the browser with the content formatted for easy viewing.
+
+3. **Customization:**
+
+- You can customize the background color, viewer styles, button colors, and other UI elements by modifying the `globals.css` file in the `/client/styles/ directory.`
 </details> 
 
  <summary><strong>Additional Information</strong></summary>
