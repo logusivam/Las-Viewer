@@ -9,6 +9,10 @@ This project is a web-based LAS file viewer that allows users to upload and view
 
 <strong>After Upload File</strong>
 
+![image](https://github.com/user-attachments/assets/8c99f921-667b-40bf-8b42-e35a72405f41)
+
+<strong>Video Demo</strong>
+
 
 
 <details> <summary><strong>Project Structure</strong></summary>
