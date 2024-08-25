@@ -93,6 +93,7 @@ npm start
 cd client
 ```
     - Run the following command:
+    
 ```bash
 npm run dev
 ```
