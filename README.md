@@ -70,17 +70,17 @@ Note: The .env file is included in .gitignore to ensure sensitive information is
 1. **Start the Backend Server**:
 
 In the root directory, run the following command:
-bash
-Copy code
+```bash
 npm start
+```
 - The backend server will run on http://localhost:5000.
 
 2. **Start the Frontend Server**:
 
 - Navigate to the /client directory:
-bash
-Copy code
+```bash
 cd client
+```
 - Run the following command:
 ```bash
 npm run dev
