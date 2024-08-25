@@ -111,17 +111,17 @@ npm run dev
 
 1. **Uploading LAS Files:**
 
-  - Click on the "Upload File" button.
-  - Select one or more LAS files from your computer.
-  - The uploaded files will be listed, and you can click on a file name to view its contents.
+    - Click on the "Upload File" button.
+    - Select one or more LAS files from your computer.
+    - The uploaded files will be listed, and you can click on a file name to view its contents.
 
 2. **Viewing LAS Files:**
 
-  - The selected LAS file will be displayed in the browser with the content formatted for easy viewing.
+    - The selected LAS file will be displayed in the browser with the content formatted for easy viewing.
 
 3. **Customization:**
 
-  - You can customize the background color, viewer styles, button colors, and other UI elements by modifying the `globals.css` file in the `/client/styles/ directory.`
+    - You can customize the background color, viewer styles, button colors, and other UI elements by modifying the `globals.css` file in the `/client/styles/ directory.`
 
 
  <summary><strong>Additional Information</strong></summary>
