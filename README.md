@@ -76,7 +76,7 @@ MONGO_URI=your-mongodb-connection-string-here
 **Note**: The `.env` file is included in `.gitignore` to ensure sensitive information is not exposed in the repository.
 
 
-<summary><strong>Running the Project</strong></summary>
+<details><summary><strong>Running the Project</strong></summary>
 
 1. **Start the Backend Server**:
 
@@ -105,9 +105,9 @@ npm run dev
 
    - Open your web browser and go to `http://localhost:3000`.
    - You can now upload LAS files and view them in the browser.
- 
+ </details>
 
-<details> <summary><strong>Usage</strong></summary>
+<summary><strong>Usage</strong></summary>
 
 1. **Uploading LAS Files:**
 
@@ -122,7 +122,7 @@ npm run dev
 3. **Customization:**
 
   - You can customize the background color, viewer styles, button colors, and other UI elements by modifying the `globals.css` file in the `/client/styles/ directory.`
-</details> 
+
 
  <summary><strong>Additional Information</strong></summary>
 
