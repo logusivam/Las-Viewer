@@ -1,9 +1,9 @@
+require('dotenv').config(); // Load environment variables
 const express = require('express');
 const mongoose = require('mongoose');
 const multer = require('multer');
 const cors = require('cors');
 const path = require('path');
-require('dotenv').config();
 
 const app = express();
 app.use(cors({
@@ -11,6 +11,7 @@ app.use(cors({
 }));
 app.use(express.json());
 
+// MongoDB connection
 mongoose.connect(process.env.MONGO_URI, {
     useNewUrlParser: true,
     useUnifiedTopology: true,
@@ -20,6 +21,7 @@ mongoose.connect(process.env.MONGO_URI, {
     console.error('Error connecting to MongoDB Atlas', err);
 });
 
+// File schema
 const fileSchema = new mongoose.Schema({
     filename: String,
     filepath: String,
@@ -31,6 +33,7 @@ const fileSchema = new mongoose.Schema({
 
 const File = mongoose.model('File', fileSchema);
 
+// Multer configuration
 const storage = multer.diskStorage({
     destination: function (req, file, cb) {
         cb(null, 'uploads/');
@@ -42,6 +45,7 @@ const storage = multer.diskStorage({
 
 const upload = multer({ storage: storage });
 
+// Routes
 app.post('/upload', upload.array('lasFiles', 10), async (req, res) => {
     const files = req.files.map(file => ({
         filename: file.originalname,
