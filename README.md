@@ -80,28 +80,28 @@ MONGO_URI=your-mongodb-connection-string-here
 
 1. **Start the Backend Server**:
 
-  - In the root directory, run the following command:
+   - In the root directory, run the following command:
 ```bash
 npm start
 ```
-  - The backend server will run on `http://localhost:5000`.
+   - The backend server will run on `http://localhost:5000`.
 
 2. **Start the Frontend Server**:
 
-  - Navigate to the `/client` directory:
+    - Navigate to the `/client` directory:
 ```bash
 cd client
 ```
-  - Run the following command:
+    - Run the following command:
 ```bash
 npm run dev
 ```
-  - The frontend will run on `http://localhost:3000`.
+   - The frontend will run on `http://localhost:3000`.
 
 3. **Access the Application**:
 
-Open your web browser and go to `http://localhost:3000`.
-You can now upload LAS files and view them in the browser.
+   - Open your web browser and go to `http://localhost:3000`.
+   - You can now upload LAS files and view them in the browser.
 </details> 
 
 <details> <summary><strong>Usage</strong></summary>
