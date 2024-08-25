@@ -67,7 +67,7 @@ Note: The .env file is included in .gitignore to ensure sensitive information is
 
 </details> <details> <summary><strong>Running the Project</strong></summary>
 
-Start the Backend Server:
+1. **Start the Backend Server**:
 
 In the root directory, run the following command:
 bash
@@ -75,7 +75,7 @@ Copy code
 npm start
 The backend server will run on http://localhost:5000.
 
-Start the Frontend Server:
+2. **Start the Frontend Server**:
 
 Navigate to the /client directory:
 bash
@@ -87,7 +87,7 @@ Copy code
 npm run dev
 The frontend will run on http://localhost:3000.
 
-Access the Application:
+3. **Access the Application**:
 
 Open your web browser and go to http://localhost:3000.
 You can now upload LAS files and view them in the browser.
