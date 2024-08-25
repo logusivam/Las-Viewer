@@ -76,7 +76,7 @@ MONGO_URI=your-mongodb-connection-string-here
 **Note**: The `.env` file is included in `.gitignore` to ensure sensitive information is not exposed in the repository.
 
 
-<details> <summary><strong>Running the Project</strong></summary>
+<summary><strong>Running the Project</strong></summary>
 
 1. **Start the Backend Server**:
 
@@ -84,7 +84,7 @@ MONGO_URI=your-mongodb-connection-string-here
 ```bash
 npm start
 ```
-    - The backend server will run on `http://localhost:5000`.
+   - The backend server will run on `http://localhost:5000`.
 
 2. **Start the Frontend Server**:
 
@@ -104,7 +104,7 @@ npm run dev
 
    - Open your web browser and go to `http://localhost:3000`.
    - You can now upload LAS files and view them in the browser.
-</details> 
+ 
 
 <details> <summary><strong>Usage</strong></summary>
 
