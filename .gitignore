@@ -17,7 +17,7 @@ pids/
 
 # Directory for uploaded files
 uploads/*
-!uploads/
+!uploads/.gitkeep
 
 
 # Next.js
