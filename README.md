@@ -43,6 +43,7 @@ Create the uploads Folder:
 In the root directory of the project, create a folder named uploads.
 This folder will be used to store the LAS files uploaded through the application.
 </details> <details> <summary><strong>Setup MongoDB Atlas</strong></summary>
+
 Create a MongoDB Atlas Account:
 
 Sign up at MongoDB Atlas.
@@ -60,36 +61,36 @@ Configure Environment Variables:
 
 In the root directory of your project, you’ll find a file named .env.example.
 Rename this file to .env and replace your-mongodb-connection-string-here with your actual MongoDB connection string:
-plaintext
-Copy code
+```plaintext
 MONGO_URI=your-mongodb-connection-string-here
-Note: The .env file is included in .gitignore to ensure sensitive information is not exposed in the repository.
+```
+**Note**: The .env file is included in .gitignore to ensure sensitive information is not exposed in the repository.
 
 </details> <details> <summary><strong>Running the Project</strong></summary>
 
 1. **Start the Backend Server**:
 
-In the root directory, run the following command:
+  - In the root directory, run the following command:
 ```bash
 npm start
 ```
-- The backend server will run on http://localhost:5000.
+  - The backend server will run on `http://localhost:5000`.
 
 2. **Start the Frontend Server**:
 
-- Navigate to the /client directory:
+  - Navigate to the `/client` directory:
 ```bash
 cd client
 ```
-- Run the following command:
+  - Run the following command:
 ```bash
 npm run dev
 ```
-- The frontend will run on http://localhost:3000.
+  - The frontend will run on `http://localhost:3000`.
 
 3. **Access the Application**:
 
-Open your web browser and go to http://localhost:3000.
+Open your web browser and go to `http://localhost:3000`.
 You can now upload LAS files and view them in the browser.
 </details> 
 
@@ -97,17 +98,17 @@ You can now upload LAS files and view them in the browser.
 
 1. **Uploading LAS Files:**
 
-- Click on the "Upload File" button.
-- Select one or more LAS files from your computer.
-- The uploaded files will be listed, and you can click on a file name to view its contents.
+  - Click on the "Upload File" button.
+  - Select one or more LAS files from your computer.
+  - The uploaded files will be listed, and you can click on a file name to view its contents.
 
 2. **Viewing LAS Files:**
 
-- The selected LAS file will be displayed in the browser with the content formatted for easy viewing.
+  - The selected LAS file will be displayed in the browser with the content formatted for easy viewing.
 
 3. **Customization:**
 
-- You can customize the background color, viewer styles, button colors, and other UI elements by modifying the `globals.css` file in the `/client/styles/ directory.`
+  - You can customize the background color, viewer styles, button colors, and other UI elements by modifying the `globals.css` file in the `/client/styles/ directory.`
 </details> 
 
  <summary><strong>Additional Information</strong></summary>
