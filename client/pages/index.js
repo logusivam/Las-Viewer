@@ -4,11 +4,16 @@ import axios from 'axios';
 export default function Home() {
     const [files, setFiles] = useState([]);
     const [selectedFile, setSelectedFile] = useState(null);
+    const [fileContent, setFileContent] = useState('');
 
     useEffect(() => {
         async function fetchFiles() {
-            const response = await axios.get('http://localhost:5000/files');
-            setFiles(response.data);
+            try {
+                const response = await axios.get('http://localhost:5000/files');
+                setFiles(response.data);
+            } catch (error) {
+                console.error('Error fetching files:', error);
+            }
         }
         fetchFiles();
     }, []);
@@ -19,36 +24,47 @@ export default function Home() {
             formData.append('lasFiles', file);
         }
 
-        await axios.post('http://localhost:5000/upload', formData, {
-            headers: {
-                'Content-Type': 'multipart/form-data',
-            },
-        });
+        try {
+            await axios.post('http://localhost:5000/upload', formData, {
+                headers: {
+                    'Content-Type': 'multipart/form-data',
+                },
+            });
+            // Reload files
+            const response = await axios.get('http://localhost:5000/files');
+            setFiles(response.data);
+        } catch (error) {
+            console.error('Error uploading files:', error);
+        }
+    };
 
-        // Reload files
-        const response = await axios.get('http://localhost:5000/files');
-        setFiles(response.data);
+    const handleFileClick = async (file) => {
+        try {
+            const response = await axios.get(`http://localhost:5000/${file.filepath}`, { responseType: 'text' });
+            setFileContent(response.data);
+            setSelectedFile(file);
+        } catch (error) {
+            console.error('Error fetching file content:', error);
+        }
     };
 
     return (
-        <div>
-            <h1>LAS File Viewer</h1>
-            <input type="file" multiple onChange={handleFileUpload} />
-            <ul>
+        <div className="container">
+            <h1 className="title">LAS File Viewer</h1>
+            <input type="file" multiple onChange={handleFileUpload} className="upload-button" />
+            <ul className="file-list">
                 {files.map((file) => (
-                    <li key={file._id} onClick={() => setSelectedFile(file)}>
+                    <li key={file._id} onClick={() => handleFileClick(file)} className="file-item">
                         {file.filename}
                     </li>
                 ))}
             </ul>
             {selectedFile && (
-                <div>
+                <div className="file-viewer">
                     <h2>Viewing: {selectedFile.filename}</h2>
-                    <iframe
-                        src={`http://localhost:5000/${selectedFile.filepath}`}
-                        width="100%"
-                        height="600px"
-                    ></iframe>
+                    <pre className="file-content">
+                        {fileContent}
+                    </pre>
                 </div>
             )}
         </div>
