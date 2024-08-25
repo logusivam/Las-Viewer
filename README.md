@@ -1,45 +1,47 @@
-LAS File Viewer Project
+# LAS File Viewer Project
+
 This project is a web-based LAS file viewer that allows users to upload and view LAS files directly in the browser. The application is built using React.js, Next.js, MongoDB, Node.js, and Express.
 
 <details> <summary><strong>Project Structure</strong></summary>
-bash
-Copy code
+
+```bash
 /las-file-viewer
 ├── /client                # Frontend (Next.js)
 │   ├── /pages
 │   │   └── index.js       # Main page of the frontend
 │   ├── /styles
 │   │   └── globals.css    # Global CSS styles
-│   ├── /public
-│   │   └── /uploads       # Static file serving (for uploaded files)
 │   └── .env.local         # Environment variables for React
 ├── /uploads               # Directory for storing uploaded files
 ├── server.js              # Backend server
 ├── .env                   # Environment variables for Node.js
 ├── .gitignore             # Git ignore file
 └── README.md              # Project README
-</details> <details> <summary><strong>Installation</strong></summary>
+```
+</details> 
 
-Clone the Repository:
+<details> <summary><strong>Installation</strong></summary>
 
-bash
-Copy code
-git clone https://github.com/yourusername/las-file-viewer.git
+1. **Clone the Repository:**
+
+```bash
+git clone https://github.com/logusivam/Las-Viewer.git
 cd las-file-viewer
-Install Dependencies:
+```
+2. **Install Dependencies:**
 
 Navigate to the root directory and install backend dependencies:
 
-bash
-Copy code
+```bash
 npm install
+```
 Navigate to the /client directory and install frontend dependencies:
 
 ```bash
 cd client
 npm install
 ```
-Create the `uploads` Folder:
+3. **Create the `uploads` Folder:**
 
   - In the root directory of the project, create a folder named `uploads`.
   - This folder will be used to store the LAS files uploaded through the application.
