@@ -43,21 +43,21 @@ npm install
 ```
 3. **Create the `uploads` Folder:**
 
-  - In the root directory of the project, create a folder named `uploads`.
-  - This folder will be used to store the LAS files uploaded through the application.
+    - In the root directory of the project, create a folder named `uploads`.
+    - This folder will be used to store the LAS files uploaded through the application.
 </details> 
 
 <details> <summary><strong>Setup MongoDB Atlas</strong></summary>
 
 1. **Create a MongoDB Atlas Account:**
 
-  - Sign up at [MongoDB Atlas](https://www.mongodb.com/products/platform/atlas-database).
-  - Create a new cluster.
+    - Sign up at [MongoDB Atlas](https://www.mongodb.com/products/platform/atlas-database).
+    - Create a new cluster.
 
 2. **Set Up Your Database:**
 
-  - Create a new database in your cluster.
-  - Create a new collection named `lasfiles` to store the uploaded LAS files.
+    - Create a new database in your cluster.
+    - Create a new collection named `lasfiles` to store the uploaded LAS files.
 
 3. **Get Your MongoDB Connection String:**
 
